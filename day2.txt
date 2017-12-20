@@ -126,18 +126,6 @@ int main() {
         printf("\n");
     }
 }
-*******************************************
-6.
-#include<stdio.h>
-#include<stdlib.h>
-int main () {
-   long val;
-   char str[20];
-   scanf("%s",&str);
-   val = strtol(str);
-   printf("In decimals: %ld", val);
-}
-
 --------------
 exercise-2
 --------------
