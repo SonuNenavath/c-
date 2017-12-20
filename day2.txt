@@ -205,5 +205,56 @@ int main () {
 }
 *******************************************
 
+5.
+#include<stdio.h>
+int main() {
+    int unit,id;
+    float charge,scharg,amt;
+    char name[10];
+    scanf("%d %s %d",&id,name,&unit);
+    printf("Customer IDNO : %d",id);
+    printf("\nCustomer Name : %s",name);
+    printf("\nunit Consumed : %d",unit);
+    if(unit>0 && unit<=199)
+    {
+        amt= unit*1.20;
+        printf("\nAmount Charges @Rs1.20 per unit : %.2f",amt);
+        if (amt>400)
+        {
+            scharg=0.15*amt;
+            printf("\nSurcharge amount : %.2f\nNet Amount Paid by the customer : %.2f",scharg,scharg+amt);
+        }
+    }
+    else if(unit>=200 && unit<400)
+    {
+        amt= unit*1.50;
+        printf("\nAmount Charges @Rs1.50 per unit : %.2f",amt);
+        if (amt>400)
+        {
+            scharg=0.15*amt;
+            printf("\nSurcharge amount : %.2f\nNet Amount Paid by the customer : %.2f",scharg,scharg+amt);
+        }
+    }
+    else if(unit>=400 && unit<600)
+    {
+        amt= unit*1.80;
+        printf("\nAmount Charges @Rs1.80 per unit : %.2f",amt);
+        if (amt>400)
+        {
+            scharg=0.15*amt;
+            printf("\nSurcharge amount : %.2f\nNet Amount Paid by the customer : %.2f",scharg,scharg+amt);
+        }
+    }
+    else if(unit>600)
+    {
+        amt= unit*2.00;
+        printf("\nAmount Charges @Rs2.00 per unit : %.2f",amt);
+        if (amt>400)
+        {
+            scharg=0.15*amt;
+            printf("\nSurcharge amount : %.2f\nNet Amount Paid by the customer : %.2f",scharg,scharg+amt);
+        }
+    }
+}
 
 
