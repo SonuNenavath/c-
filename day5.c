@@ -134,3 +134,23 @@ getch();
 return 0;
 }
 
+*****************************************************************
+Read from one file and write into other file
+#include<stdio.h>
+#include<conio.h>
+int main()
+{	FILE *fp;
+	FILE *rp;
+	char c;
+	fp = fopen("prog41.c","r");
+	rp = fopen("new.txt","w");
+	while(  (c=fgetc(fp))!= EOF)
+	{
+		      fprintf(rp,"%c",c);
+	}
+	fclose(fp);
+	fclose(rp);
+	clrscr();
+	getch();
+	return 0;
+}
