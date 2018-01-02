@@ -1,0 +1,48 @@
+1. Print numbers from 1 to 10
+#include<iostream.h>
+#include<conio.h>
+int main() {
+int num;
+clrscr();
+for(num=0;num<=10;num++)
+{
+ cout<<num<<endl;
+}
+}
+
+2.Swapping 
+#include<iostream.h>
+#include<conio.h>
+int main() {
+int num1=22,num2=33;
+clrscr();
+num1=num1+num2-(num2=num1);
+ cout<<"after swapping:"<<endl;
+ cout<<num1<<endl;
+ cout<<num2<<endl;
+}
+
+3. Using Structures
+#include<iostream.h>
+#include<conio.h>
+
+struct books {
+ char title[50];
+ char author[50];
+};
+
+int main()
+{
+ books book1;
+
+ cout<<"enter the book title:";
+ cin>>book1.title;
+ cout<<"enter the author:";
+ cin>>book1.author;
+
+ cout<< "book information" <<endl;
+ cout<<"name:"<<book1.title<<endl;
+ cout<<"author:"<<book1.author<<endl;
+
+ return 0;
+}
